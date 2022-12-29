@@ -69,7 +69,4 @@ function checkLoginStatus() {
     }
   });
 
-window.addEventListener('load', function() {
-  checkLoginStatus();
-});
 
