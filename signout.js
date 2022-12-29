@@ -6,3 +6,4 @@ firebase.auth().signOut().then(function() {
   // An error occurred
   console.error(error);
 });
+}
