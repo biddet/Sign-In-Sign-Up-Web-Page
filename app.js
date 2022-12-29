@@ -44,13 +44,18 @@ sign_in_btn.addEventListener('click', () =>{
   function signIn(){
    var  email = document.getElementById("sign_in_email").value;
    var  password = document.getElementById("sign_in_password");
-    firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-      // Redirect to the new page
-      window.location = '/welcome.html';
-    }).catch(function(error) {
-      // Display an error message if the login fails
-      document.getElementById('container').innerHTML = '<p>User not found</p>';
-    });
+    
+   const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+promise.then(() => {
+  // Sign-in was successful, so redirect the user to a different page
+  window.location.href = '/welcome';
+}).catch(e => {
+  // Sign-in was unsuccessful, so display an error message
+  alert(e.message);
+});
+
+   email.value='';
+   password.value='';
  }
 
 // Sign Out function
