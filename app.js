@@ -63,9 +63,11 @@ function checkLoginStatus() {
     if (user) {
       // User is signed in, so redirect them to the desired page
       window.location.href = 'welcome.html';
+    } else {
+      // User is not signed in, so redirect them to the login page
+      window.location.href = 'index.html';
     }
   });
-}
 
 window.addEventListener('load', function() {
   checkLoginStatus();
