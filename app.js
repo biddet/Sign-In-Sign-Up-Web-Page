@@ -51,6 +51,7 @@ sign_in_btn.addEventListener('click', () =>{
       // Display an error message if the login fails
       document.getElementById('container').innerHTML = '<p>User not found</p>';
     });
+    });
  }
 
 // Sign Out function
