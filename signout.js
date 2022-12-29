@@ -1,3 +1,4 @@
+function signOut() {
 firebase.auth().signOut().then(function() {
   // Sign-out was successful
   console.log('User signed out');
