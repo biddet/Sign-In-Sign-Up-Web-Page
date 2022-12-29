@@ -13,13 +13,13 @@ sign_in_btn.addEventListener('click', () =>{
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyBal78RRLcOOCG4LVKvrY5OupGc6mpiABY",
-    authDomain: "form-4a97f.firebaseapp.com",
-    projectId: "form-4a97f",
-    storageBucket: "form-4a97f.appspot.com",
-    messagingSenderId: "17149906961",
-    appId: "1:17149906961:web:bde85044bbe06e214261b0",
-    measurementId: "G-7VM00G8FEH"
+    apiKey: "AIzaSyCgRSmjw1iWIcAVMXg5cd6Yic7cW69G15c",
+  authDomain: "onid-1.firebaseapp.com",
+  projectId: "onid-1",
+  storageBucket: "onid-1.appspot.com",
+  messagingSenderId: "23407192164",
+  appId: "1:23407192164:web:7bb33752c48b7cf1769771",
+  measurementId: "G-R6Z1SPWMJV"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
