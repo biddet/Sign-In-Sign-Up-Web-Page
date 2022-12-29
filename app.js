@@ -42,7 +42,7 @@ sign_in_btn.addEventListener('click', () =>{
 
 // Sign In function
   function signIn(){
-   var  email = document.getElementById("sign_in_email").value;
+   var email = document.getElementById("sign_in_email").value;
    var  password = document.getElementById("sign_in_password");
     
    const promise = auth.signInWithEmailAndPassword(email.value, password.value);
