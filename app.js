@@ -58,6 +58,14 @@ function signIn() {
   password.value = '';
 }
 
+// Sign Out function
+ function signOut(){
+
+ 		auth.signOut();
+ 		alert("Signed Out");
+
+ 	}
+
 function checkLoginStatus() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
