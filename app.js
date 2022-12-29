@@ -48,7 +48,7 @@ sign_in_btn.addEventListener('click', () =>{
    const promise = auth.signInWithEmailAndPassword(email.value, password.value);
 promise.then(() => {
   // Sign-in was successful, so redirect the user to a different page
-  window.location.href = '/welcome';
+ window.location.href = 'welcome.html';
 }).catch(e => {
   // Sign-in was unsuccessful, so display an error message
   alert(e.message);
