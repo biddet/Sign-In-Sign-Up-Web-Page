@@ -18,7 +18,7 @@
     <div class="container">
         <div class="forms-container">
           <div class="signin-signup">
-            <button id="logout-button" onclick="logout()">Log Out</button>
+            <button onClick={() => app.auth().signOut()}>Sign out</button>
             <form action="#" class="sign-in-form">
               <h1 class="web_app_name">HOUSET</h1>
               <h2 class="title">Sign In</h2>
