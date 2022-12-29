@@ -1,4 +1,4 @@
-function logout() {
+function signOut() {
  firebase.auth().signOut().then(function() {
   console.log('Signed Out');
 }, function(error) {
