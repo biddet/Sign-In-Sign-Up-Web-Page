@@ -65,3 +65,17 @@ function signIn() {
  		alert("Signed Out");
 
  	}
+
+function checkLoginStatus() {
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in, so redirect them to the desired page
+      window.location.href = 'welcome.html';
+    }
+  });
+}
+
+window.addEventListener('load', function() {
+  checkLoginStatus();
+});
+
