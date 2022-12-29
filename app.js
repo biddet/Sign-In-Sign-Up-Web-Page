@@ -47,11 +47,9 @@ function signIn() {
 
   const promise = auth.signInWithEmailAndPassword(email, password);
   promise.then(() => {
-    // Sign-in was successful, so redirect the user to a different page
-    window.location.href = 'welcome.html';
+  window.location.href = 'welcome.html';
   }).catch(e => {
-    // Sign-in was unsuccessful, so display an error message
-    alert(e.message);
+  alert(e.message);
   });
 
   email.value = '';
