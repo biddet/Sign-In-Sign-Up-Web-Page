@@ -41,22 +41,22 @@ sign_in_btn.addEventListener('click', () =>{
   }
 
 // Sign In function
-  function signIn(){
-   var email = document.getElementById("sign_in_email").value;
-   var  password = document.getElementById("sign_in_password");
-    
-   const promise = auth.signInWithEmailAndPassword(email.value, password.value);
-promise.then(() => {
-  // Sign-in was successful, so redirect the user to a different page
- window.location.href = 'welcome.html';
-}).catch(e => {
-  // Sign-in was unsuccessful, so display an error message
-  alert(e.message);
-});
+function signIn() {
+  var email = document.getElementById("sign_in_email").value;
+  var password = document.getElementById("sign_in_password").value;
 
-   email.value='';
-   password.value='';
- }
+  const promise = auth.signInWithEmailAndPassword(email, password);
+  promise.then(() => {
+    // Sign-in was successful, so redirect the user to a different page
+    window.location.href = 'welcome.html';
+  }).catch(e => {
+    // Sign-in was unsuccessful, so display an error message
+    alert(e.message);
+  });
+
+  email.value = '';
+  password.value = '';
+}
 
 // Sign Out function
  function signOut(){
