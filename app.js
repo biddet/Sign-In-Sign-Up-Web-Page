@@ -59,18 +59,3 @@ sign_in_btn.addEventListener('click', () =>{
  		alert("Signed Out");
 
  	}
-
-
-// User state function
- auth.onAuthStateChanged(function(user){
- 	if(user){
- 		var email = user.email;
- 		alert("Active User " + email);
- 		//Take user to a different or home page
- 		//is signed in
- 	}
-   else{
- 		alert("No Active User");
- 		//no user is signed in
- 	}
- });
