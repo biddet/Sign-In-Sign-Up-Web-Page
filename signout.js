@@ -1,9 +1,6 @@
 function logout() {
-  FirebaseAuth.getInstance().signOut().then(function() {
-    // Sign-out was successful
-    console.log('User signed out');
-  }).catch(function(error) {
-    // An error occurred
-    console.error(error);
-  });
-}
+ firebase.auth().signOut().then(function() {
+  console.log('Signed Out');
+}, function(error) {
+  console.error('Sign Out Error', error);
+});
